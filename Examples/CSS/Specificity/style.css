@@ -1,0 +1,33 @@
+p {
+    color: red;
+}
+
+p {
+    color: blue;
+}
+
+/* by the rule of specificity the last rule will take preference over the first rule */
+
+.special {
+    color: green;
+}
+
+/*  a class is more specific then a element rule,  */
+
+.heading {
+    color: green;
+}
+
+#heading {
+    color: red;
+}
+
+/* an id atribute is more specific then a class */
+
+/* and for last the universal selector * has the least amount of specificity */
+
+* {
+    color: aqua;
+}
+
+/* even though the * is placed as the last rule it does not change the previous rules */
