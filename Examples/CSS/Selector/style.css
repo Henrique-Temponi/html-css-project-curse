@@ -1,0 +1,19 @@
+/* Select multiple elements at once */
+h1,h2 {
+    color: red;
+}
+
+/* ID selectors */
+#main-paragraph {
+    color: green;
+    background: black;
+}
+
+/* Class selectors */
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
