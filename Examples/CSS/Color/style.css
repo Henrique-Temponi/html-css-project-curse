@@ -1,0 +1,23 @@
+#first {
+    color: white;
+    background-color: black;
+}
+
+#second {
+    color: #874e13;
+    background-color: #08a103;
+}
+
+#third {
+    color: rgb(255, 0, 0);
+    background: rgb(0, 0, 0);
+}
+
+#four {
+    color: rgba(17, 170, 13, 0.50);
+    background: rgba(131, 81, 93, 0.76);
+}
+
+body {
+    background: rgb(23, 73, 134);
+}
