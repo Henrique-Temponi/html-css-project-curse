@@ -1,0 +1,24 @@
+/* 
+Pixels      -absolute values
+Percent     -relative unit/value looking at the parent
+*/
+
+h1 {
+    font-size: 60px;
+    background: blue;
+    color: white;
+    width: 200px;
+    height: 200px;
+}
+
+.outer {
+    width: 300px;
+    height: 300px;
+    background: blue;
+}
+
+.inner {
+    width: 50%;
+    height: 50%;
+    background: red;
+}
