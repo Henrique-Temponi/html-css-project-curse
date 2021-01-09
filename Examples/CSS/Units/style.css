@@ -1,8 +1,17 @@
 /* 
 Pixels      -absolute values
 Percent     -relative unit/value looking at the parent
+em          -relative depends on parent e.g:
+            -1em = 16px default
+            -1em = base value (16px) * number (1) = 16px
+            -2em = base value (16px) * number (2) = 32px
+            -3em ....
+rem         -relative depends on root (either by broswer or html value)
+vh          - height - percent of screen
+vw          - width  - percent of screen
 */
 
+/* Absolute */
 h1 {
     font-size: 60px;
     background: blue;
@@ -17,8 +26,49 @@ h1 {
     background: blue;
 }
 
+/* relative */
 .inner {
     width: 50%;
     height: 50%;
     background: red;
+}
+
+/* relative to parent/root */
+.absolute {
+    font-size: 16px;
+}
+
+.relative {
+    font-size: 2em;
+}
+
+.relative-rem {
+    font-size: 1rem;
+}
+
+div {
+    font-size: 16px;
+}
+
+html {
+    font-size: 13px;
+}
+
+/* relative to screen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background: green;
+}
+
+.about {
+    width: 50vw;
+    height: 50vh;
+    background: blue;
 }
