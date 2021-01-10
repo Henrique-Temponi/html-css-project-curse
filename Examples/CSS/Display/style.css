@@ -1,0 +1,104 @@
+/* 
+elements have it set by default
+display block: Always starts a new line and spans full width
+display inline: Does not start a new line and spands only content
+
+
+*/
+
+.block {
+    background: blue;
+    color: white;
+    /* display: inline; */
+    width: 300px;
+    margin: 0 auto;
+}
+
+.inline {
+    background: red;
+    color: white;
+    /* display: block; */
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    /* text-align: center; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* descendent selectors */
+ul li {
+    list-style-type: none;
+
+    /* using inline-block it will respect width and height without creating a new line */
+    display: inline-block;
+}
+
+ul li a {
+    color: orange;
+    text-decoration: none;
+    letter-spacing: 2px;
+    background: black;
+    /* using block it will respect width and height */
+    /* display: block; */
+
+    padding: 5px;
+}
+
+.box1, .box2, .box3 {
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.box1 {
+    background: red;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box2 {
+    background: blue;
+}
+
+.box3 {
+    background: green;
+    padding: 20px;
+}
+
+.none, .opacity-1, .opacity-5, .opacity-0, .visi {
+    background: red;
+    margin: 10px;
+    color: white;
+    font-size: 1.3rem;   
+}
+
+
+/* display none removes the element from the worklow and hides it */
+.none {
+    display: none;
+}
+
+/* opacity and visibility does not remove the element, only hides it */
+
+.opacity-1 {
+    opacity: 1;
+}
+
+.opacity-5 {
+    opacity: 0.5;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.visi {
+    visibility: hidden;
+}
