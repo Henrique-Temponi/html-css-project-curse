@@ -1,0 +1,74 @@
+/* background imgs */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    min-height: 100vh;
+    color: white;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.big-img {
+    background: url('https://images.pexels.com/photos/5845720/pexels-photo-5845720.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.small-img {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+        url('https://images.pexels.com/photos/6225550/pexels-photo-6225550.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.folder-img {
+    background: url('https://images.pexels.com/photos/5847574/pexels-photo-5847574.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260') center/cover fixed no-repeat;
+    /* background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; */
+}
+
+/* div {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+} */
+
+/* .one {
+    background: linear-gradient(blue, green);
+}
+
+.two {
+    background: linear-gradient(to left, blue, green, red, yellow, orange);
+}
+
+.three {
+    background: linear-gradient(300deg, red, green);
+}
+
+.four {
+    background: linear-gradient(to top right, red, green);
+}
+
+.five {
+    background: linear-gradient(blue 20%, yellow 70%);
+}
+
+.six {
+    background: linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0, 0.9));
+} */
