@@ -1,0 +1,71 @@
+/* 
+font-size
+font-family
+
+font-stack - a fallback font if user broswer don't support a specifc font. 
+
+if the broswer dont support the fallback fonts, a genetic font will be given
+
+google fonts:
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+can place directy on css
+
+font-weight
+font-style
+
+text-align
+text-indent
+
+line-height - if its a unitless number, then it will be calculated by (number * font-size)
+letter-spacing
+word-spacing
+text-transform
+text-decoration
+*/
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    text-transform: lowercase;
+}
+
+h1 {
+    font-family: Helvetica;
+    font-size: medium;
+    text-align: center;
+    /* text-decoration: underline; */
+    text-transform: uppercase;
+}
+
+/* import was commented, fallback should activate, and display cursive */
+
+h2 {
+    font-family: 'Hachi Maru Pop', cursive;
+    text-align: left;
+}
+
+p {
+    text-indent: 100px;
+    text-align: left;
+}
+
+.one {
+    line-height: 3px;
+    letter-spacing: 5px;
+    text-decoration: overline;
+}
+
+.two {
+    word-spacing: 10px;
+    text-transform: capitalize;
+}
+
+.three {
+    text-transform: uppercase;
+}
+
+a {
+    font-size: 3rem;
+    text-decoration: none;
+}
+
