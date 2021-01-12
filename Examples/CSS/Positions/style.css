@@ -1,0 +1,110 @@
+/* 
+Position static - default, always positioned according to the normal flow,
+       relative - position relative to it's normal position, but can be used with top,
+                  bottom, left,right, the other content will not be ajusted to fill the gap
+       absolute - Relative to the parent with position:relative, if none parents have
+                  position: reative, body will be used, as it's by deffault always relaive
+          fixed - Relative to viewport, stays as we are scrolling
+         sticky - Toggle between relative and fixed once the position is met in the viewport must use on of the values: top,left ...
+*/
+
+.img-1, .img-2 {
+    width: 200px;
+    height: 200px;
+    background: red;
+}
+
+.img-1 {
+    float: right;
+}
+
+.img-2 {
+    float: left;
+}
+
+.banner {
+    border: 5px solid red;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+p {
+    clear: both;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.one, .two, .three, .four {
+    height: 100px;
+    width: 25%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.one {
+    background: red;
+}
+
+.two {
+    background: green;
+}
+
+.three {
+     background: blue;
+}
+
+.four {
+    background: yellow;
+}
+
+.position {
+    border: 3px solid red;
+    color: white;
+    background: black;
+    clear: both;
+    /* position: relative; */
+}
+
+.p-one {
+    background: blue;
+    color: white;
+}
+
+.p-two {
+    background: green;
+    color: white;
+}
+
+.special {
+    background: pink;
+    font-size: 20px;
+    color: black;
+    /* will search for a parent with position relative */
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+}
+
+.navbar {
+    background: orange;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    width: 100%;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+
+    position: sticky;
+    top: 0;
+}
+
+.long {
+    height: 300vh;
+    width: 100vw;
+}
