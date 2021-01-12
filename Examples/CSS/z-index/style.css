@@ -1,0 +1,50 @@
+.img1, .img2, .img3 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+
+}
+
+.banner {
+    margin: 20px;
+    width: 80vw;
+    height: 70vh;
+    border: 5px solid green;
+    position: relative;
+}
+
+.img1 {
+    top: 0;
+    left: 0;
+    background: blue;
+    z-index: 3;
+}
+
+.img2 {
+    top: 10%;
+    left: 10%;
+    background: green;
+    z-index: 2;
+}
+
+.img3 {
+    top: 20%;
+    left: 20%;
+    background: red;
+}
+
+p::before{
+    content: 'hello there';
+    display: block;
+    font-weight: bold;
+    font-size: 2rem;
+    color: red;
+}
+
+p::after{
+    content: 'after';
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+    color: red;
+}
