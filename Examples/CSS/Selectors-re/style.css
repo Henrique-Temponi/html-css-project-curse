@@ -1,0 +1,94 @@
+/* 
+few new selectors, such as direct descendant and child
+first line and letter
+:hover
+a pseudo-class
+
+*/
+
+* {
+    color: red;
+
+}
+
+#simple {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: blue;
+}
+
+.simple {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: green;
+}
+
+p {
+    letter-spacing: 5px;
+}
+
+div h1 {
+    color: red;
+}
+
+div > h1 {
+    color: blue;
+}
+
+.header h1 {
+    color: green;
+}
+
+.header > h1 {
+    color: purple;
+}
+
+.test::first-line {
+    font-weight: bold;
+}
+
+.test::first-letter {
+    font-size: 150%;
+}
+
+div:hover {
+    color: orange;
+}
+
+/* 
+a pseudo-class 
+*/
+
+a {
+    display: block;
+    background: blue;
+    margin: 10px;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: green;
+}
+
+a:active {
+    color: white;
+}
+
+/* 
+:root
+*/
+
+:root {
+    font-size: 10px;
+}
+
+.absolute {
+    font-size: 24px;
+}
+
+.relative {
+    font-size: 1.5rem;
+}
