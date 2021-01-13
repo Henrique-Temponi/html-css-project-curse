@@ -1,0 +1,134 @@
+/* 
+transform traslate, scale  rotate skew
+
+transition: change over time
+
+*/
+
+div {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background: blue;
+    font-size: 24px;
+    color: white;
+    margin: 5px;
+    transition: all 2s;
+}
+
+div:hover {
+    transform: translateY(100px);
+}
+
+.div1 {
+    background: red;
+    /* transform: translateY(50%); */
+    /* transform: scaleX(2); */
+    /* transform: rotate(45deg); */
+    /* transform: skewX(45deg); */
+}
+
+.div2 {
+    background: blue;
+    /* transform: translateY(25%); */
+    /* transform: scaleX(0.5); */
+    /* transform: rotate(10deg); */
+    /* transform: skewX(45deg); */
+}
+
+.div3 {
+    background: green;
+    /* transform: translate(50%, 25%); */
+    /* transform: scale(2, 2); */
+    /* transform: rotateX(80deg); */
+    /* transform: skew(45deg, 40deg); */
+    /* transition-property: background, border-radius;
+    transition-duration: 3s, 2s;
+    transition-delay: 2s; */
+    /* transition: background 2s 1s, border-radius 3s 2s; */
+    transition: all 2s;
+
+}
+
+.div3:hover {
+    background: orange;
+    border-radius: 50%;
+    transform: scale(1.2);
+}
+
+/* default */
+.ease {
+    transition-timing-function: ease;
+}
+.linear {
+    transition-timing-function: linear;
+}
+.ease-in {
+    transition-timing-function: ease-in;
+}
+.ease-out {
+    transition-timing-function: ease-out;
+}
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+.transition {
+    transition: all 2s linear;
+}
+
+.transition:hover {
+    background: yellow;
+    transform: translateY(100px);
+}
+
+.animation {
+    background: red;
+    /* animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: 3; */
+
+    animation: ani 5s 3;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translateY(100px);
+    }
+
+    75% {
+        transform: translateY(-200px);
+        background: purple;
+    }
+
+    100% {
+        transform: translateY(20px);
+        background: green;
+    }
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0.1;
+    }
+    25% {
+        transform: translateX(200px);
+        opacity: 0.25;
+    }
+    50% {
+        transform: translateX(-100px);
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        transform: translateX(20px);
+        opacity: 1;
+    }
+}
