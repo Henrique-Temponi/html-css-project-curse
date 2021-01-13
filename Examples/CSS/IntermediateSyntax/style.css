@@ -1,0 +1,50 @@
+/* 
+CSS variables
+
+--varName:value
+scope
+:root{} = global
+element = local
+
+*/
+
+:root{
+    --primaryColor: #4adc2fcd;
+    --cl-secondaty: blue;
+    --mainTransition: all 2s linear;
+    --mainSpacing: 5px;
+}
+
+h1 {
+    color: var(--primaryColor);
+}
+
+p {
+    letter-spacing: var(--mainSpacing);
+    transition: var(--mainTransition);
+    color: var(--primaryColor);
+}
+
+div {
+    --primaryRed: red;
+}
+
+.main {
+    color: var(--primaryRed);
+}
+
+p {
+    color: var(--primaryRed);
+}
+
+h4 {
+    text-shadow: 5px 10px 6px red;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    margin: 20px;
+    box-shadow: 3px 5px 5px green;
+}
