@@ -133,6 +133,12 @@ p {
     outline: 2px solid black;
     outline-color: var(--clr-primary);
     outline-offset: 5px;
+    transition: var(--transition);
+}
+
+.header a:hover {
+    background: var(--clr-primaty-light);
+    color: var(--clr-primary);
 }
 
 .header > .content {
