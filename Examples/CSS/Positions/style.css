@@ -3,7 +3,7 @@ Position static - default, always positioned according to the normal flow,
        relative - position relative to it's normal position, but can be used with top,
                   bottom, left,right, the other content will not be ajusted to fill the gap
        absolute - Relative to the parent with position:relative, if none parents have
-                  position: reative, body will be used, as it's by deffault always relaive
+                  position: relative, body will be used, as it's by deffault always relative
           fixed - Relative to viewport, stays as we are scrolling
          sticky - Toggle between relative and fixed once the position is met in the viewport must use on of the values: top,left ...
 */
